@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px; /* Fixed height for consistent layout */
+  height: 800px; 
 }
 
 .form-container {
