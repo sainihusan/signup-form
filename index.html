@@ -8,44 +8,58 @@
 
 </head>
 <body>
-    <div class="form-container">
-    <h2>Signup Form</h2>
-    <form novalidate>
-      <div>
-        <label for="fullname">Full Name *</label>
-        <input type="text" id="fullname" name="fullname"required minlength="3" placeholder="name"/>
-      </div>
-
-      <div>
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com"/>
-      </div>
-
-      <div>
-        <label for="password">Password *</label>
-        <input type="password" id="password" name="password" required minlength="6" placeholder="password"/>
-      </div>
-
-      <div>
-        <label for="password">confirm-Password *</label>
-        <input type="password" id="password" name="password" required minlength="6" placeholder="Re-enter your password"/>
-      </div>
-      
   
+    <div class="form-container">
+    <h2>Create your account</h2>
 
+    <form >
+      <div class="form-contain">
+        <div class="name">
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="name"  class="input-control"/>
+        <span class="text">2-60characters</span>
+      </div>
+      <div class="name">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" class="input-control"/>
+      </div>
+      </div>
       
+        <div class="password1">
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="password" class="input-control1"/>
+        <span class="text">min 8 chars, 1 uppercase, 1 lowercase, 1 number </span>
+      </div>
 
+      <div class="form-contain">
+        <div class="name">
+        <label for="phone">Phone *</label>
+  <input   type="tel"   id="phone"   name="phone"   required   pattern="[0-9+()\- ]{7,20}"   placeholder="+1234567890"   class="input-control"/>
+  <span class="text">10 digits, start with 6 & 9 </span>
+  </div>
+      <div class="name">
+       <label for="role">Role *</label>
+  <select 
+    id="role" 
+    name="role" 
+    required 
+    class="input-control"
+  >
+    <option value="" disabled selected>Choose your role</option>
+    <option value="manager">Manager</option>
+    <option value="developer">Developer</option>
+    <option value="designer">Designer</option>
+    <option value="marketing">Marketing</option>
+    <option value="other">Other</option>
+    
+  </select>
+      </div>
       
-      
-      <fieldset>
-      <div>Select gender:</div>
-  <label><input name="gender" type="radio" value="male" required> Male</label>
-  <label><input name="gender" type="radio" value="female" required> Female</label>
-  <label><input name="gender" type="radio" value="other" required> Other</label>
-</fieldset>
+     
 
-      <button type="submit">Sign Up</button>
+
     </form>
+    
     
 </body>
 </html>
