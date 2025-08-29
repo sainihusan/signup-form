@@ -75,7 +75,7 @@ form{
 
 input:valid {
   border-color: green;
-  /* background-color:lightgreen; */
+ 
 }
 
 input:required:invalid {
@@ -128,4 +128,48 @@ input:required:invalid {
     border-radius: 13px;
     background-color: darkblue;
 }
+
+
+@media (max-width: 790px) {
+  .form-contain {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  .input-control,
+  .input-control1,
+  .input-control2,
+  .input-control3 {
+    width: 100%; 
+  }
+
+  .button {
+    width: 42%; 
+  }
+}
+
+
+@media (max-width: 380px) {
+  body {
+    padding: 10px;
+    height: auto; 
+  }
+
+  .form-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .text3 {
+    font-size: 16px;
+  }
+}
+
+
+
+
 
