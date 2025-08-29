@@ -78,7 +78,7 @@ input:valid {
  
 }
 
-input:required:invalid {
+input:invalid {
   border-color: red;
   
 }
@@ -99,14 +99,15 @@ input:required:invalid {
   }
 
   .profile{
-        border: 1px solid;
-    padding: 10px;
+       border: 1px solid;
+    padding: 7px;
     border-radius: 10px;
+    width: 95%;
 
   }
 
   .input-control3{
-      width: 352px;
+      width: 318px;
     padding: 10px;
     border-radius: 7px;
 }
@@ -126,7 +127,7 @@ input:required:invalid {
       width: 22%;
     padding: 10px;
     border-radius: 13px;
-    background-color: darkblue;
+    background-color: darkslateblue;
 }
 
 
@@ -167,6 +168,9 @@ input:required:invalid {
   .text3 {
     font-size: 16px;
   }
+}
+.required{
+  color: red;
 }
 
 
