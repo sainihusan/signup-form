@@ -27,7 +27,7 @@
       
         <div class="password1">
         <label for="password">Password *</label>
-        <input type="password" id="password" name="password" required minlength="6" placeholder="password" class="input-control1"/>
+        <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"placeholder="password" class="input-control1"/>
         <span class="text">min 8 chars, 1 uppercase, 1 lowercase, 1 number </span>
       </div>
 
