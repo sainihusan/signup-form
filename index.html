@@ -16,8 +16,8 @@
       <div class="form-contain">
         <div class="name">
         <label for="fullname">Full Name <span class="required">*</span></label>
-        <input type="text" id="fullname" name="fullname" required minlength="3"   class="input-control"/>
-        <span class="text">2-60characters</span>
+        <input type="text" id="fullname" name="fullname" required minlength="2"   class="input-control"/>
+        <span class="text">2-60 characters.</span>
       </div>
       <div class="name">
         <label for="email">Email <span class="required">*</span></label>
@@ -27,15 +27,15 @@
       
         <div class="password1">
         <label for="password">Password <span class="required">*</span></label>
-        <input type="password" id="password" name="password" required   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" class="input-control1"/> <!--lookahead-->
-        <span class="text">min 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special character </span>
+        <input type="password" id="password" name="password" required   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" class="input-control1"/> <!--lookahead-->
+        <span class="text">Min 8 chars, 1 uppercase, 1 lowercase, 1 number. </span>
       </div>
 
       <div class="form-contain">
         <div class="name">
         <label for="phone">Phone(india)</label>
-  <input   type="tel"   id="phone"   name="phone"      pattern="^[6-9][0-9]{9}$"     class="input-control"/>
-  <span class="text">10 digits, start with 6 & 9 </span>
+  <input   type="tel"   id="phone"   name="phone"   placeholder="9876543210"   pattern="^[6-9][0-9]{9}$"     class="input-control"/>
+  <span class="text">10 digits, start with 6-9. </span>
   </div>
       <div class="name">
        <label for="role">Role <span class="required">*</span></label>
@@ -58,7 +58,7 @@
 
       <div class="profile">
        <span class="text1">Profile</span> 
-       <div class="form-contain">
+       <div class="form-contain2">
         <div class="name">
           <label for="experience">Years of Experience <span class="required">*</span></label>
       <input type="number" id="experience" name="experience" required min="1" class="input-control3"/>
@@ -76,14 +76,21 @@
           <input type="url" id="portfolio" placeholder="https://example.com" class="input-control1">
 
         </div>
-
-        <div class="terms">
+        <div class="foot">
+          <div class="terms">
       <input type="checkbox" id="terms" required>
       <label for="terms">I agree to the Terms <span class="required">*</span></label>
     </div>
       
+<diV class="btn-text">
+  <button class="button"><span class="text3">Create Account</span></button>
+        <span class="text">Built in message will appear if fields are invalid.</span>
+</diV>
+        
 
-        <button class="button"><span class="text3">Create Account</span></button>
+        </div>
+
+        
       </div>
 
       

@@ -42,7 +42,8 @@ h2 {
   
 }
 .text{
-  color: #9b9292;;
+  color: #A8A5A8;
+    font-size: 13px;
 }
 form{
   display: flex
@@ -70,6 +71,12 @@ form{
     padding: 11px 0px;
         gap: 4px;
 
+}
+.form-contain2{
+ display: flex
+;
+    gap: 10px;
+    padding: 7px 10px;
 }
 
 .input-control1{
@@ -108,7 +115,7 @@ input:invalid {
        border: 1px ridge;
     padding: 7px;
     border-radius: 10px;
-    width: 95%;
+    width: 97%;
 
   }
 
@@ -120,7 +127,7 @@ input:invalid {
 .text1{
       position: relative;
     
-    top: -18px;
+    top: -16px;
 }
 
 .text3{
@@ -133,9 +140,20 @@ input:invalid {
       width: 22%;
     padding: 10px;
     border-radius: 13px;
-    background-color: darkslateblue;
+    background-color: #222D59;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
+.btn-text{
+      display: flex
+;
+    align-items: center;
+    gap: 15px;
+}
 @media(max-width: 816px){
   .profile{
     border: 1px ridge;
@@ -148,10 +166,12 @@ input:invalid {
 
 
 @media (max-width: 790px) {
-  .form-contain {
+  .form-contain,
+  .form-contain2 {
     flex-direction: column; 
     gap: 15px;
   }
+  
 
   .input-control,
   .input-control1,
