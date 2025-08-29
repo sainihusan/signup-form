@@ -184,7 +184,7 @@ input:invalid {
   color: #A8A5A8;
   font-size: 13px;
   font-weight: bold;
-  font-family: inherit;
+      font-family: sans-serif;
 }
 
 .required {
