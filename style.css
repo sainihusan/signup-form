@@ -33,7 +33,8 @@ h2 {
 
 label {
       
-  font-size: 14px;
+  font-size: 19px;
+    
   font-weight: 500;
 }
 
@@ -131,7 +132,7 @@ input:invalid {
 
 .profile {
   border: 1px ridge;
-  padding: 7px;
+  
   border-radius: 10px;
   width: 97%;
   /*  */
@@ -139,7 +140,7 @@ input:invalid {
 
 .text1 {
      position: relative;
-    top: -17px;
+    top: -10px;
     left: 13px;
     background-color: white;
     padding: 7px;
@@ -147,8 +148,8 @@ input:invalid {
 }
 
 .text3 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 500;
   color: white;
   
 }
