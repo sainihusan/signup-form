@@ -3,7 +3,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  
+  font-family: 'Lekton', monospace;
   background: #f9f9f9;
   margin: 0;
   padding: 20px;
@@ -20,6 +21,7 @@ body {
   width: 800px;
   max-width: 100%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
 }
 
 h2 {
@@ -27,143 +29,177 @@ h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #333333;
+  font-family: inherit;
 }
-.main-container{
+
+label {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: inherit;
 }
 
-.name{
-  display: flex
-;
-    flex-direction: column;
-    gap: 5px;
-  
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: inherit;
 }
-.text{
+
+.text {
   color: #A8A5A8;
-    font-size: 13px;
-}
-form{
-  display: flex
-;
-    flex-direction: column;
-    gap: 10px;
+  font-size: 13px;
+  font-family: inherit;
 }
 
-.form-contain{
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: inherit;
+}
+
+.form-contain {
   display: flex;
   gap: 10px;
-      padding: 6px 0px;
+  padding: 6px 0px;
+  font-family: inherit;
 }
 
-.input-control{
-      width: 352px;
-    padding: 10px;
-    border-radius: 7px;
+.input-control,
+.input-control1,
+.input-control2,
+.input-control3 {
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
 }
 
-.password1{
-      display: flex
-;
-    flex-direction: column;
-    padding: 11px 0px;
-        gap: 4px;
-
-}
-.form-contain2{
- display: flex
-;
-    gap: 10px;
-    padding: 7px 10px;
+.input-control {
+  width: 352px;
 }
 
-.input-control1{
-      width: 712px;
-    padding: 10px;
-    border-radius: 7px;
+.input-control1 {
+  width: 712px;
 }
 
+.input-control2 {
+  width: 352px;
+}
+
+.input-control3 {
+  width: 318px;
+}
+
+.password1 {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 0px;
+  gap: 4px;
+  font-family: inherit;
+}
+
+.form-contain2 {
+  display: flex;
+  gap: 10px;
+  padding: 7px 10px;
+  font-family: inherit;
+}
 
 input:valid {
-  border-color: #4CAF50;
- 
+  border-color: #A0E7CA;
 }
 
 input:invalid {
-  border-color: red;
-  
+  border-color: #F7325F;
 }
 
-.input-control2{
-      width: 352px;
-    padding: 10px;
-    border-radius: 7px;
+.input-control2:invalid {
+  border: 2px solid #F7325F;
 }
 
+.input-control2:valid {
+  border: 2px solid #A0E7CA; 
+}
 
- .input-control2:invalid {
-    border: 2px solid red;
-  }
+.profile {
+  border: 1px ridge;
+  padding: 7px;
+  border-radius: 10px;
+  width: 97%;
+  font-family: inherit;
+}
 
-  .input-control2:valid {
-    border: 2px solid #4CAF50; 
-  }
-
-  .profile{
-       border: 1px ridge;
+.text1 {
+     position: relative;
+    top: -17px;
+    left: 13px;
+    background-color: white;
     padding: 7px;
-    border-radius: 10px;
-    width: 97%;
-
-  }
-
-  .input-control3{
-      width: 318px;
-    padding: 10px;
-    border-radius: 7px;
-}
-.text1{
-      position: relative;
-    
-    top: -16px;
+    font-family: inherit;
 }
 
-.text3{
+.text3 {
   font-size: 18px;
-    font-weight: 600;
-    color: white;
+  font-weight: 600;
+  color: white;
+  font-family: inherit;
 }
 
-.button{
-      width: 22%;
-    padding: 10px;
-    border-radius: 13px;
-    background-color: #222D59;
+.button {
+  width: 22%;
+  padding: 11px;
+  border-radius: 8px;
+  background-color: #222D59;
+  border: 0px;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
 }
-.foot{
+
+.foot {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  font-family: inherit;
 }
 
-.btn-text{
-      display: flex
-;
-    align-items: center;
-    gap: 15px;
+.btn-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: inherit;
 }
-@media(max-width: 816px){
-  .profile{
+
+.text2 {
+  color: #A8A5A8;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.required {
+  color: #F7325F;
+  font-family: inherit;
+}
+
+@media (max-width: 816px) {
+  .profile {
     border: 1px ridge;
     padding: 7px;
     border-radius: 10px;
     width: 100%;
   }
-      
 }
-
 
 @media (max-width: 790px) {
   .form-contain,
@@ -171,7 +207,6 @@ input:invalid {
     flex-direction: column; 
     gap: 15px;
   }
-  
 
   .input-control,
   .input-control1,
@@ -184,7 +219,6 @@ input:invalid {
     width: 42%; 
   }
 }
-
 
 @media (max-width: 380px) {
   body {
@@ -205,11 +239,3 @@ input:invalid {
     font-size: 16px;
   }
 }
-.required{
-  color: red;
-}
-
-
-
-
-
