@@ -99,7 +99,7 @@ input:invalid {
   }
 
   .profile{
-       border: 1px solid;
+       border: 1px outset;
     padding: 7px;
     border-radius: 10px;
     width: 95%;
@@ -114,7 +114,7 @@ input:invalid {
 .text1{
       position: relative;
     
-    top: -21px;
+    top: -18px;
 }
 
 .text3{
