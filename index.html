@@ -34,7 +34,7 @@
       <div class="form-contain">
         <div class="name">
         <label for="phone">Phone *</label>
-  <input   type="tel"   id="phone"   name="phone"   required   pattern="[0-9+()\- ]{7,20}"   placeholder="+1234567890"   class="input-control"/>
+  <input   type="tel"   id="phone"   name="phone"   required   pattern="^[6-9][0-9]{9}$"     class="input-control"/>
   <span class="text">10 digits, start with 6 & 9 </span>
   </div>
       <div class="name">
@@ -43,7 +43,7 @@
     id="role" 
     name="role" 
     required 
-    class="input-control"
+    class="input-control2"
   >
     <option value="" disabled selected>Choose your role</option>
     <option value="manager">Manager</option>
@@ -54,6 +54,39 @@
     
   </select>
       </div>
+      </div>
+
+      <div class="profile">
+       <span class="text1">profie</span> 
+       <div class="form-contain">
+        <div class="name">
+          <label for="experience">Years of Experience *</label>
+      <input type="number" id="experience" name="experience" required min="1" max="50" placeholder="Enter years" class="input-control3"/>
+      </div>
+
+      <div class="name">
+         <label for="city">City (suggestions)</label>
+          <input type="text" id="city"  placeholder="Enter city" class="input-control" >
+        </div>
+        </div>
+
+      </div>
+        <div class="password1">
+          <label for="portfolio">Portfolio URL</label>
+          <input type="url" id="portfolio" placeholder="https://yourportfolio.com" class="input-control1">
+
+        </div>
+
+        <div class="terms">
+      <input type="checkbox" id="terms" required>
+      <label for="terms">I agree to the Terms <span class="required">*</span></label>
+    </div>
+      
+
+        <button class="button"><span class="text3">Create Account</span></button>
+      </div>
+
+      
       
      
 

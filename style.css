@@ -41,6 +41,12 @@ h2 {
 .text{
   color: #333333;
 }
+form{
+  display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .form-contain{
   display: flex;
@@ -75,5 +81,51 @@ input:valid {
 input:required:invalid {
   border-color: red;
   
+}
+
+.input-control2{
+      width: 352px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+ .input-control2:invalid {
+    border: 2px solid red;
+  }
+
+  .input-control2:valid {
+    border: 2px solid #4CAF50; 
+  }
+
+  .profile{
+        border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+
+  .input-control3{
+      width: 352px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.text1{
+      position: relative;
+    
+    top: -21px;
+}
+
+.text3{
+  font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.button{
+      width: 22%;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: darkblue;
 }
 
