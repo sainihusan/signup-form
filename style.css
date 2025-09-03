@@ -3,6 +3,7 @@
 }
 
 body {
+ font-family: "PT Sans", sans-serif;
   
   background: #f9f9f9;
   margin: 0;
@@ -33,7 +34,7 @@ h2 {
 
 label {
       
-  font-size: 19px;
+  font-size: 17px;
     
   font-weight: 500;
 }
@@ -139,11 +140,11 @@ input:invalid {
 }
 
 .text1 {
-     position: relative;
+         position: relative;
     top: -10px;
     left: 13px;
     background-color: white;
-    padding: 7px;
+    padding: 6px;
     /*  */
 }
 
