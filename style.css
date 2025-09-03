@@ -62,7 +62,7 @@ label {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  
   
 }
 
@@ -87,7 +87,12 @@ form {
 .input-control {
   width: 352px;
 }
-
+.contain-main{
+      display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+}
 .input-control1 {
   width: 712px;
 }
