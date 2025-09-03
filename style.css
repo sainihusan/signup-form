@@ -244,4 +244,11 @@ input:invalid {
   .text3 {
     font-size: 13px;
   }
+  .text1 {
+    position: relative;
+    top: -16px;
+    left: 13px;
+    background-color: white;
+    padding: 6px;
+}
 }
